@@ -260,7 +260,7 @@
             .array()
             .then(function (scores) {
               scores = scores[0];
-              predicted = scores.indexOf(Math.max(...scores));
+              predicted = scores.indexOf(Math.max(scores));
               $("#number").html(predicted);
             });
         } else {
